@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cleveroad</title>
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnNIRUnPFOIhn4PMu7sNZPkQzMfTDxwTk&callback=initMap" type="text/javascript"></script>
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="content">
+        <div class="left">
+            <div>
+                <h3>IIS is now located at:</h3>  
+                longitude: <span id="longitude"></span>
+                latitude: <span id="latitude"></span>
+            </div>
+            <div id="map"></div>
+        </div>
+        <div class="right">
+                <div>
+                    <h3>Current UTC time: <span id="time"></span> </h3>
+                    <span id="date"></span>
+                </div>
+                <div class="inspace">
+                    <ul id="astronames"></ul>
+                    <p>Total amount: <span id="spacepeeps"></span> people on ISS</p>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
